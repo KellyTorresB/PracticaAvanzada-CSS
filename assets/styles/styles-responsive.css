@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    color: crimson;
+}
+
+@media(max-width: 500px) {
+    body {
+        color: blue;
+    }
+
+    .parrafo {
+        display: none;
+    }
+}
+
+@media(orientation:landscape) {
+    body {
+        color: rgb(0, 255, 157);
+    }
+}
+
+@media(orientation:landscape) and (max-width:600px){
+    body{color:goldenrod;
+    font-family:Georgia, 'Times New Roman', Times, serif}
+}

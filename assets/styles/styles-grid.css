@@ -1,0 +1,57 @@
+.grid-container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+.grid-container > div{
+    border:1px solid black;
+    background-color: bisque;
+}
+
+#item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#BarraNavegacion{background-color: rgb(201, 160, 25);
+    grid-area: BarraNavegacion;
+}
+
+#Imagenes{background-color: rgb(155, 69, 212);
+    grid-area:Imagenes;
+}
+
+#Parrafo1{background-color: rgb(233, 20, 13);
+    grid-area:Parrafo1;
+}
+
+#Parrafo2{background-color: rgb(255, 217, 0);
+    grid-area:Parrafo2;
+}
+
+#Boton1{background-color: rgb(4, 0, 255);
+    grid-area:Boton1;
+}
+
+#Boton2{background-color: rgb(92, 37, 0);
+    grid-area:Boton2;
+}
+
+#Footer{background-color: aqua;
+grid-area: Footer;
+}
+
+.container-excel{
+    display: grid;
+    grid-template-areas:"BarraNavegacion BarraNavegacion BarraNavegacion"
+                        "Imagenes Parrafo1 Parrafo2"
+                        "Imagenes Boton1 Boton2"
+                        "Footer Footer Footer";
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(3, auto);
+}
+
+
